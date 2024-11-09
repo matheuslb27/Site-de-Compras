@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Local</title>
+    <script src="cadastrolocal.js"></script>
+    <style>
+        label{
+            display: inline-block;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body onload="carregaTela()" >
+    <label for="codigo">Código</label>
+    <input type="text" id="codigo" >
+    <br>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome">
+    <br>
+    <label for="senha">Senha</label>
+    <input type="password" id="senha"><br>
+
+    <br>
+    <button >Novo</button>
+    <button onclick="salvar()" >Salvar</button>
+    <button >Excluir</button>
+
+    <table>
+        <thead>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Senha</th>
+            <th></th>
+        </thead>
+
+        <tbody id="tbodyLista">
+
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina - Cadastro</title>
+        <link rel="stylesheet" href="./css/comunCss.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="./javascript/cadastro.js"></script>
+    </head>
+
+    <body onload="carregarLista()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">Sites Compras</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./cadastro.html">Cadastro de produtos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./lista.html">Lista de produtos</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+        <br>
+        <br>
+        <form id="cadastroForm">
+            <label for="cod">Código Produtos:</label>
+            <input type="number" disabled name="cod" id="cod">
+            
+            <br>
+        <br>
+          <label for="nome">Nome do Produto:</label>
+          <input type="text" id="nome" required>
+        <br>
+        <br>
+          <label for="unidade">Unidade:</label>
+          <select id="unid" required>
+            <option value="">Escolha uma opção</option>
+            <option value="un">Unidade</option>
+            <option value="kg">Quilograma</option>
+            <option value="lt">Litro</option>
+            <option value="mt">Metro</option>
+            <option value="pc">Pacote</option>
+          </select>
+        <br>
+        <br>
+          <label for="quantidade">Quantidade:</label>
+          <input type="number" id="quant" required>
+        <br>
+        <br>
+          <label for="codigoBarra"> Código de Barra: </label>
+          <input type="text" id="codBarras" pattern="[0-9]{13}" required>
+        <br>
+        <br>
+            <label for="ativo">Ativo:</label>        
+            <input type="checkbox" name="ativo" id="ativo">
+        </form>
+        <br>
+        <br>
+            <div>
+                <button onclick="salvar()" class="btn btn-primary marginButton">Salvar</button>
+                <button onclick="novo()" class="btn btn-primary marginButton">Novo</button>
+                <button onclick="excluir()" class="btn btn-primary marginButton" >Excluir</button>
+            </div>
+        <br>
+        <br>
+        <br>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Código Produto</th>
+                        <th scope="col">Nome Produto</th>
+                        <th scope="col">Unidade</th>
+                        <th scope="col">Quantidade necessário</th>
+                        <th scope="col">Codigo de Barras</th>
+                        <th scope="col">Ativo</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody id="produtosCadastro">
+                    
+                </tbody>
+            </table>
+        </body>
+   
+</html>

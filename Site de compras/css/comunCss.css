@@ -1,0 +1,82 @@
+tr.risca,
+tr.risca td {
+    background: transparent url('http://davidrhysthomas.co.uk/linked/strike.png') 0 50% repeat-x;
+    color: #0d6efd;
+}
+.marginButton{
+    margin-right: 20px;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent url(https://www.tenda.com/eudouconta/wp-content/uploads/2021/08/Importancia-de-economizar-no-supermercado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0d6efd;
+}
+
+#cadastroForm {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-right: 40px;
+}   
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+
+#cadastroForm{
+    opacity: 0.85;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro Local</title>
+    <script src="teste.js"></script>
+    <style>
+        label {
+            display: inline-block;
+            width: 50px;
+        }
+    </style>
+</head>
+<body onload="carregarLista()">
+
+    <p id="msgErro" style="display: none; color: red;" ></p>
+
+    <label for="codigo">Código</label>
+    <input type="text" id="codigo" disabled >
+    <br>
+
+    <label for="nome">Nome</label>
+    <input type="text" id="nome">
+    <br>
+
+    <label for="senha">Senha</label>
+    <input type="password" id="senha">
+    <br>
+
+    <br>
+    <br>
+
+    <button onclick="salvar()" >Salvar</button>
+    <button onclick="novo()" >Novo</button>
+    <button onclick="excluir()" >Excluir</button>
+
+    <table>
+        <thead>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Senha</th>
+            <th></th>
+        </thead>
+        <tbody id="tbodyLista">
+        </tbody>
+    </table>
+</body>
+</html>
